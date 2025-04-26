@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>一茎深发布页 - 获取最新域名和访问地址</title>
+    <meta name="description" content="一茎深发布页，提供最新的域名和访问地址，确保用户能够及时找到最新的入口。">
+    <meta name="keywords" content="一茎深, 一茎深最新域名, 一茎深发布页, 一茎深最新地址">
+    <meta name="robots" content="index, follow">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding-top: 20px; 
+            background-color: #f0f0f0; 
+            color: #333; 
+            font-family: Arial, sans-serif;
+        }
+        .center-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%; 
+        }
+        .header-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 24px;
+            color: #444;
+        }
+        .domain-list {
+            text-align: center;
+            width: 100%; 
+        }
+        .domain-list-wrapper {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-left: 5%; 
+            margin-right: 5%; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+        }
+        .welcome {
+            font-size: 20px;
+            color: #555;
+            margin: 0;
+        }
+        .disclaimer {
+            font-size: 14px;
+            color: #999;
+            margin: 0;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .domain {
+            font-size: 14px;
+            color: #d47f63; 
+            cursor: pointer;
+            margin: 0;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .domain-container {
+            margin-bottom: 20px;
+            border-radius: 10px;
+            padding: 15px;
+            width: 95%;
+            max-width: 600px;
+            text-align: center;
+            background-color: #fafafa;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease; 
+        }
+        .domain-container:hover {
+            transform: translateY(-5px); 
+        }
+        .domain-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+        .copyright {
+            margin-top: 20px;
+            color: #999;
+            font-size: 12px;
+        }
+    </style>
+    <script>
+        function blockDeveloperTools() {
+            // 禁止右键菜单
+            document.addEventListener('contextmenu', function(event) {
+                event.preventDefault();
+            });
+
+            // 禁止按键
+            document.addEventListener('keydown', function(event) {
+                if (event.keyCode === 123 || 
+                    (event.ctrlKey && event.shiftKey && event.keyCode === 73) || 
+                    (event.ctrlKey && event.shiftKey && event.keyCode === 74) || 
+                    (event.ctrlKey && event.keyCode === 85)) {
+                    event.preventDefault();
+                    window.location.href = "about:blank";
+                }
+            });
+
+            // 检测控制台打开
+            var checkStatus;
+            (function checkDevTools() {
+                checkStatus = false;
+                var element = new Image();
+                Object.defineProperty(element, 'id', {
+                    get: function() {
+                        checkStatus = true;
+                        throw new Error('检测到控制台');
+                    }
+                });
+                console.log(element);
+                console.clear();
+                if (checkStatus) {
+                    window.location.href = "about:blank";
+                }
+                setTimeout(checkDevTools, 1000);
+            })();
+
+            // 混淆代码（示例）
+            var _0xabcdef = ['aGVsbG8gd29ybGQ=', 'bG9jYXRpb24=', 'aHJlZj0=', 'YWJvdXQ6Ymxhbms=', 'cGFyZW50TG9jYXRpb24='];
+            (function(_0xabcdef, _0x123456) {
+                var _0x1a2b3c = function(_0x4d5e6f) {
+                    while (--_0x4d5e6f) {
+                        _0xabcdef['push'](_0xabcdef['shift']());
+                    }
+                };
+                _0x1a2b3c(++_0x123456);
+            }(_0xabcdef, 0x1a));
+            var _0x456789 = function(_0x1a2b3c, _0x4d5e6f) {
+                _0x1a2b3c = _0x1a2b3c - 0x0;
+                var _0x7e8f9a = _0xabcdef[_0x1a2b3c];
+                if (_0x456789['initialized'] === undefined) {
+                    (function() {
+                        var _0x5f6a7b;
+                        try {
+                            var _0x123456 = Function('return (function() ' + '{}.constructor("return this")( )' + ');');
+                            _0x5f6a7b = _0x123456();
+                        } catch (_0x8d9e0f) {
+                            _0x5f6a7b = window;
+                        }
+                        var _0xabcd12 = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';
+                        _0x5f6a7b['atob'] || (_0x5f6a7b['atob'] = function(_0x123456) {
+                            var _0x789abc = String(_0x123456)['replace'](/=+$/, '');
+                            var _0x456def = '';
+                            for (var _0x789012 = 0x0, _0x12ab34, _0x567def, _0x89abcdef = 0x0; _0x567def = _0x789abc['charAt'](_0x89abcdef++); ~_0x567def && (_0x12ab34 = _0x789012 % 0x4 ? _0x12ab34 * 0x40 + _0x567def : _0x567def, _0x789012++ % 0x4) ? _0x456def += String['fromCharCode'](0xff & _0x12ab34 >> (-0x2 * _0x789012 & 0x6)) : 0x0) {
+                                _0x567def = _0xabcd12['indexOf'](_0x567def);
+                            }
+                            return _0x456def;
+                        });
+                    }());
+                    var _0x567890 = function(_0xabcdef, _0x456789) {
+                        var _0x789abc = [],
+                            _0x123456 = 0x0,
+                            _0x12ab34, _0x7e8f9a = '',
+                            _0x789012 = '';
+                        _0xabcdef = atob(_0xabcdef);
+                        for (var _0x567def = 0x0, _0x89abcdef = _0xabcdef['length']; _0x567def < _0x89abcdef; _0x567def++) {
+                            _0x789012 += '%' + ('00' + _0xabcdef['charCodeAt'](_0x567def)['toString'](0x10))['slice'](-0x2);
+                        }
+                        _0xabcdef = decodeURIComponent(_0x789012);
+                        for (var _0x456def = 0x0; _0x456def < 0x100; _0x456def++) {
+                            _0x789abc[_0x456def] = _0x456def;
+                        }
+                        for (_0x456def = 0x0; _0x456def < 0x100; _0x456def++) {
+                            _0x123456 = (_0x123456 + _0x789abc[_0x456def] + _0x456789['charCodeAt'](_0x456def % _0x456789['length'])) % 0x100;
+                            _0x12ab34 = _0x789abc[_0x456def];
+                            _0x789abc[_0x456def] = _0x789abc[_0x123456];
+                            _0x789abc[_0x123456] = _0x12ab34;
+                        }
+                        _0x456def = 0x0;
+                        _0x123456 = 0x0;
+                        for (var _0x567890 = 0x0; _0x567890 < _0xabcdef['length']; _0x567890++) {
+                            _0x456def = (_0x456def + 0x1) % 0x100;
+                            _0x123456 = (_0x123456 + _0x789abc[_0x456def]) % 0x100;
+                            _0x12ab34 = _0x789abc[_0x456def];
+                            _0x789abc[_0x456def] = _0x789abc[_0x123456];
+                            _0x789abc[_0x123456] = _0x12ab34;
+                            _0x7e8f9a += String['fromCharCode'](_0xabcdef['charCodeAt'](_0x567890) ^ _0x789abc[(_0x789abc[_0x456def] + _0x789abc[_0x123456]) % 0x100]);
+                        }
+                        return _0x7e8f9a;
+                    };
+                    _0x456789['initialized'] = !![];
+                }
+                var _0xabcdef12 = _0x456789['initialized'] ? _0x567890(_0x7e8f9a, _0x456789) : _0x7e8f9a;
+                return _0xabcdef12;
+            };
+            console.log(_0x456789('0x0') + _0x456789('0x1') + _0x456789('0x2') + _0x456789('0x3') + _0x456789('0x4') + _0x456789('0x5'));
+
+        }
+
+        blockDeveloperTools();
+    </script>
+    <script>
+        
+        const domains = ["1jingshen19希望top", "1jingshen20希望top", "1jingshen21希望top", "1jingshen22希望top"];
+
+        
+        const subdomains = ["HongKongDoll", "guochan", "riben"];
+
+       
+        const noRedirectMap = {
+            "1jingshen3希望top": ["douyin"],
+            "1jingshen6希望top": ["zipai", "luoli"],
+        };
+
+        
+        function getRandomSubdomain(domain) {
+            let randomSubdomain;
+            do {
+                randomSubdomain = subdomains[Math.floor(Math.random() * subdomains.length)];
+            } while (noRedirectMap[domain] && noRedirectMap[domain].includes(randomSubdomain));
+            return randomSubdomain;
+        }
+
+       
+        function randomRedirect(domain) {
+            const randomSubdomain = getRandomSubdomain(domain);
+            const newUrl = `https://${randomSubdomain}.${domain.replace('希望', '.')}`;
+            window.location.href = newUrl;
+        }
+
+        
+        function displayDomainList() {
+            const domainListContainer = document.getElementById('domainList');
+            const wrapper = document.createElement('div'); 
+            wrapper.classList.add('domain-list-wrapper'); 
+
+            domains.forEach((domain, index) => {
+                const randomSubdomain = getRandomSubdomain(domain);
+                const displayDomain = `https://${randomSubdomain}.${domain.replace('希望', '.')}`;
+                const domainDiv = document.createElement('div');
+                domainDiv.classList.add('domain-container');
+
+                const domainWrapper = document.createElement('div');
+                domainWrapper.classList.add('domain-wrapper');
+
+                const welcomeText = document.createElement('div');
+                welcomeText.textContent = `一茎深地址 ${index + 1}`;
+                welcomeText.classList.add('welcome');
+                domainWrapper.appendChild(welcomeText);
+
+                const domainText = document.createElement('div');
+                domainText.textContent = displayDomain;
+                domainText.classList.add('domain');
+                domainWrapper.appendChild(domainText);
+
+                domainText.addEventListener('click', () => {
+                    window.location.href = displayDomain;
+                });
+
+                const disclaimerText = document.createElement('div');
+                disclaimerText.textContent = '未满18请自觉离开，请勿使用国产浏览器访问。';
+                disclaimerText.classList.add('disclaimer');
+                domainWrapper.appendChild(disclaimerText);
+
+                domainDiv.appendChild(domainWrapper);
+                wrapper.appendChild(domainDiv); 
+            });
+
+            domainListContainer.appendChild(wrapper); 
+        }
+
+       
+        document.addEventListener('DOMContentLoaded', () => {
+            displayDomainList();
+            setTimeout(() => {
+                const randomDomain = domains[Math.floor(Math.random() * domains.length)];
+                randomRedirect(randomDomain);
+            }, 3000);
+        });
+
+    </script>
+</head>
+<body>
+    
+
+<script>
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//matomo.zbka.xyz/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '5']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+
+
+    <div class="center-container">
+        <div class="header-container">
+            <h1>正在跳转到最新可用地址</h1>
+        </div>
+        <div class="domain-list" id="domainList"></div>
+    </div>
+    <div class="copyright">© 2022 一茎深 All Rights Reserved.</div>
+
+</body>
+</html>
